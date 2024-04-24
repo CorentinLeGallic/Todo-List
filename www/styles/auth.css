@@ -1,0 +1,89 @@
+.auth-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-title {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.auth-form {
+    width: 400px;
+    /* background-color: rgb(248, 248, 248); */
+    background-color: var(--bg9);
+    border-radius: 10px;
+    /* border: 5px solid #292929; */
+    border: 5px solid var(--border6);
+    /* box-shadow: 2px 2px 1px whitesmoke, -2px -2px 1px whitesmoke, -2px 2px 1px whitesmoke, 2px -2px 1px whitesmoke; */
+    box-shadow: 2px 2px 1px var(--shadow4), -2px -2px 1px var(--shadow4), -2px 2px 1px var(--shadow4), 2px -2px 1px var(--shadow4);
+    padding: 30px 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    position: relative;
+}
+
+.auth-form > *:not(.auth-error) {
+    width: 90%;
+}
+
+.auth-form > label {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+}
+
+.auth-form > input[type=text], .auth-form > input[type=password] {
+    height: 40px;
+    font-size: 18px;
+    padding: 0 4px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.auth-form > input[type=text]::placeholder, .auth-form > input[type=password]::placeholder {
+    font-size: 15px;
+}
+
+.auth-submit {
+    margin-top: 20px;
+    height: 50px;
+    border: none;
+    background-color: rgba(0, 163, 14, 0.774);
+    font-family: "Segoe UI", sans-serif;
+    font-size: 20px;
+    /* color: #FFF; */
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.auth-error {
+    position: absolute;
+    bottom: 82px;
+    height: 25px;
+    font-size: 14px;
+    left: 0;
+    right: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 0, 0, 0.699);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#error-icon-path1 {
+    fill: rgb(203, 75, 16);
+}
+
+#error-icon-path2 {
+    stroke: rgb(203, 75, 16);
+    stroke-width: 1.8px;
+}

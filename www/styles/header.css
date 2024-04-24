@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+header {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    /* background-color: rgb(51, 47, 46); */
+    /* background-color: #1b1a19; */
+    background-color: var(--bg5);
+    border-bottom: 1px solid var(--border7);
+}
+
+#overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 100;
+    /* background-color: #0000004b; */
+    background-color: var(--bg6);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+}
+
+#title {
+    /* color: #FFF; */
+    color: var(--color4);
+    height: 100%;
+    width: fit-content;
+    margin-left: 30px;
+    line-height: 60px;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#header-right-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 30px;
+    width: 300px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.header-links {
+    height: 100%;
+    padding: 0 5px;
+    /* background-color: rgb(83, 83, 83); */
+    background-color: var(--bg7);
+    border: none;
+    /* color: #e3e3e3; */
+    color: var(--color3);
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: .3s ease-out;
+}
+
+.header-links:hover {
+    /* background-color: rgb(109, 29, 29); */
+    background-color: var(--current-theme);
+    /* background-color: rgb(145, 145, 145); */
+}
+
+#account-button {
+    height: 100%;
+    width: 70px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#account-logo {
+    height: 60%;
+    aspect-ratio: 1 / 1;
+    /* background-image: url("../assets/images/user.png"); */
+    /* background-size: 100%; */
+}
+
+#account-button > span {
+    /* color: white; */
+    color: var(--color3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    user-select: none;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+#account-dropdown {
+    z-index: 10;
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    width: 250px;
+    height: max-content;
+    transform: translateY(-10px);
+    border-radius: 10px;
+    padding: 5px 0;
+
+    /* background-color: #292929; */
+    background-color: var(--bg1);
+    box-shadow: 1px 1px 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#account-dropdown.active {
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#account-username {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* background-color: red; */
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    /* color: #FFF; */
+    color: var(--color1);
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+
+#account-separator {
+    margin: 5px 0;
+    /* border-color: rgb(148, 50, 50); */
+    border-color: var(--current-theme);
+}
+
+.account-list {
+    list-style-type: none;
+}
+
+.account-option {
+    user-select: none;
+    padding: 0 15px;
+    width: 100%;
+    height: 35px;
+}
+
+.account-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.account-link > .logo {
+    height: 20px;
+    width: auto;
+}
+
+.account-link > span {
+    font-size: 16px;
+    line-height: 35px;
+    font-family: "Segoe UI", sans-serif;
+    /* color: rgb(216, 216, 216); */
+    color: var(--color2);
+}
+
+.account-option:hover {
+    /* background-color: #353535; */
+    background-color: var(--bg4);
+    cursor: pointer;
+  }

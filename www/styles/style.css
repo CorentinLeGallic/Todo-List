@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: inherit ;
+}
+
+html, body{
+    min-height:100%;
+}
+
+body {
+    /* background-color: #292929; */
+    background-color: var(--bg1);
+    overflow-x: hidden;
+}
+
+:root[data-theme="dark"]{
+    /* --bg1: #1C1C1E; */
+    /* --bg1: #1b1b1b; */
+    --bg1: #292929;
+    --bg2: rgb(59, 59, 59);
+    --bg3: #282828;
+    --bg4: #353535;
+    --bg5: #1b1a19;
+    /* --bg5: #121212; */
+    --bg6: #0000004b;
+    --bg7: rgb(83, 83, 83);
+    --bg8: #FFF;
+    --bg9: rgb(248, 248, 248);
+    --bg10: #282828;
+    --shadow1: #00000050;
+    --shadow2: rgb(94, 94, 94);
+    --shadow3: rgb(15, 15, 15);
+    --shadow4: rgb(245, 245, 245);
+    --border1: #FFF;
+    --border2: rgb(15, 15, 15);
+    --border3: rgba(255, 255, 255, 0.5);
+    --border4: rgb(94, 94, 94);
+    --border5: rgb(27, 27, 27);
+    --border6: #292929;
+    --border7: transparent;
+    --color1: rgba(255, 255, 255, 0.85);
+    --color2: rgb(216, 216, 216);
+    --color3: #e3e3e3;
+    --color4: #FFF;
+    --overlay: rgba(0, 0, 0, 0.301);
+    --theme-color1: rgb(109, 0, 0);
+    --theme-color2: rgb(0, 63, 100);
+    --theme-color3: rgb(0, 133, 1);
+    --theme-color4: rgb(102, 0, 169);
+    --theme-color5: rgb(147, 146, 0);
+    --current-theme: var(--theme-color1);
+}
+
+:root[data-theme="light"]{
+    /* --bg1: #DDDDDD; */
+    /* --bg1: rgb(227, 230, 230); */
+    --bg1: #EEE;
+    /* --bg2: rgb(196, 196, 196); */
+    --bg2: #FEFEFE;
+    /* --bg3: #FDFDFD; */
+    --bg3: #F3F3F3;
+    --bg4: #CACACA;
+    /* --bg5: #E4E5E6; */
+    --bg5: #292929;
+    --bg6: #FFFFFFB4;
+    /* --bg7: rgb(172, 172, 172); */
+    --bg7: rgb(91, 91, 91);
+    --bg8: #000;
+    --bg9: #FFF;
+    --bg10: #FDFDFD;
+    --shadow1: #00000050;
+    --shadow2: transparent;
+    --shadow3: rgb(240, 240, 240);
+    /* --shadow4: rgb(245, 245, 245); */
+    --shadow4: #292929;
+    --border1: #000;
+    --border2: rgb(196, 196, 196);
+    --border3: rgba(0, 0, 0, 0.5);
+    --border4: rgb(196, 196, 196);
+    --border5: rgb(220, 220, 220);
+    /* --border6: #DDDDDD; */
+    --border6: #FFF;
+    --border7 : gray;
+    --color1: #000;
+    --color2: rgb(39, 39, 39);
+    --color3: #e3e3e3;
+    --color4: #FFF;
+    --overlay: rgba(0, 0, 0, 0.301);
+    --theme-color1: #a91d00;
+    --theme-color2: rgb(0, 143, 219);
+    --theme-color3: rgb(57, 213, 2);
+    --theme-color4: rgb(154, 0, 255);
+    --theme-color5: rgb(203, 199, 0);
+    --current-theme: var(--theme-color1);
+}
